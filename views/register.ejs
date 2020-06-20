@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Startup</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/5fd1893766.js" crossorigin="anonymous">
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+	
+	<link rel="stylesheet" href="/login/auth.css">
+	<link rel="stylesheet" href="/login/auth2.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+	<header>
+		<div class="login">
+			<a href="/login">Login</a>
+		</div>
+		<div class="log">
+			<p>APPX</p>
+		</div>
+		
+	</header>
+
+	<main>
+		<div class="form">
+
+
+			
+			<form name="login" action="" method="POST">
+				<h1>Register</h1>
+				
+
+				<div class="input-container">
+					<i class="fa fa-user icon"></i>
+					<input class="input-field" type="text" placeholder="Username" name="username" required>
+				</div>
+				<div class="input-container">
+					
+					<i class="fa fa-envelope icon"></i>
+					<input class="input-field" type="email" placeholder="Email" name="email" required>
+				
+				</div>
+
+				
+
+				<div class="input-container" style="flex-direction: column;">
+					<div style="display:flex;">
+					<i class="fa fa-key icon"></i>
+					<input class="input-field" type="password" placeholder="Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="Password">
+				</div>
+				<p class="alert" style="font-family:Arial, Helvetica, sans-serif;
+				font-size:1.2rem;
+				font-weight: 300;
+				color:red;
+				margin-top: 1rem;">one uppercase,special character and minimum length of 8</p>
+				</div>
+				
+				<div class="input-container" style="margin:3rem 0;">
+					<i class="fa fa-key icon"></i>
+					<input class="input-field" type="text" placeholder="Confirm Password" name="pswc" required>
+				</div>
+
+				<div class="button">
+					<button type="submit">Register</button>
+				</div>
+
+				
+
+				
+				
+			</form>
+
+			
+
+			<div class="opt">
+				<div class="line1"></div>
+				<div class="or"><p>OR</p></div>
+				<div class="line1"></div>
+			</div>
+			<div class="sign">
+				<button><a href="/auth/google"><i class="fa fa-google"></i><span>Sign Up with Google</span></a></button>
+				
+			</div>
+
+
+
+		</div>
+
+	</main>
+
+</body>
+</html>

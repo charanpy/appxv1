@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>APPX</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/home/style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Sriracha&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="/home/appmq.css">
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,800&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Mono:ital,wght@0,100;0,400;0,500;0,700;1,100;1,500&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5fd1893766.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <main class="App row">
+        <nav class="navbar column">
+
+            <ul class="nav_link column" id="popup">
+                <li class="nav_list active"><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                <li class="nav_list"><a href="#"><i class="fas fa-robot"></i>Probot</a></li>
+                <li class="nav_list"><a href="#profile"><i class="fas fa-id-badge"></i>Profile</a></li>
+                <li class="nav_list"><a href="#"><i class="fas fa-wrench"></i>Settings</a></li>
+                <li class="nav_list"><a href="#"><i class="fab fa-adn"></i>About</a></li>
+            </ul>
+            <div class="close">
+                <i class="fas fa-window-close" id="close"></i>
+
+            </div>
+
+        </nav>
+        
+        <section class="App-feauture column">
+            <header class="header">
+                <div class="header_heading width">
+                    <h1><i class="fas fa-bars" id="ham"></i>APPX</h1>
+                </div>
+                <div class="header_search width">
+                    <input type="search" placeholder="Search"><i class="fas fa-search"></i>
+                </div>
+                <div class="profile width">
+                    <div class="c">
+                        <i class="fas fa-users"></i>
+                        <div class="popups">
+                            <p><a href="#">Logout</a></p>
+
+                        </div></div>
+                    </div>
+                    <div>
+
+                    </div>
+                </header>
+
+                <section class="greeting">
+                    <h1>Welcome <%=username%>!</h1>
+                    <div class="input-search">
+                        <input type="search" placeholder="Search"><i class="fas fa-search"></i></div>
+
+                    </section>
+
+                    <main class="feautures-appx">
+                        <div class="image">
+                            <div class="box">
+                                <img src="/home/chat.jpg" alt="chat-app">
+                                <h1>Chatting</h1>
+                            </div>
+                            <div class="box">
+                                <img src="/home/chat.jpg" alt="chat-app">
+
+
+                            </div>
+
+
+                            <div class="box">
+                                <img src="/home/chat.jpg" alt="chat-app">
+                                <h1>Chatting</h1>
+                            </div>
+
+                            <div class="box">
+                                <img src="/home/chat.jpg" alt="chat-app">
+                                <h1>Chatting</h1>
+                            </div>
+
+                            <div class="box">
+                                <img src="/home/chat.jpg" alt="chat-app">
+                                <h1>Chatting</h1>
+                            </div>
+
+
+                            <div class="box">
+                                <img src="/home/chat.jpg" alt="chat-app">
+                                <h1>Chatting</h1>
+                            </div>
+                        </div>
+
+                    </main>
+
+                </section>
+            </main>
+            <div class="popup"  id="profile">
+                <div class="popup_content">
+                    <a href="#popup" class="li">&times;</a>
+                    <div class="images">
+                        <i class="fas fa-user"></i>
+
+                    </div>
+                    <div class="user-details">
+                        <form name="user" action="/" method="POST">
+                            <div class="details">
+                                <label>Email</label>
+                                <input type="email" required value="<%=email%>" name="email" readonly>
+                            </div>
+                            <div class="details">
+                                <label>Id</label>
+                                <input type="text" required value="<%=ids%>" readonly name="ids">
+                            </div>
+                            <div class="details">
+                                <label>Username</label>
+                                <input type="text" required value="<%=username%>" readonly name="username">
+                            </div>
+                            <div class="details">
+                                <label>Bio</label>
+                                <textarea rows="3" cols="3" value="" readonly name="bio"><%=bio%></textarea>
+                            </div>
+ <input type="hidden" value="<%=id%>" name="id">
+                            <div class="button">
+                                <button><a href="/update/<%=id%>" style="color:white;">Edit Profile</a></button>
+                            </div>
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <script src="/home/script.js"></script>"
+        </body>
+        </html>
